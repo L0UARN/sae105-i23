@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-BoldItalic.woff2') format('woff2'),
+    url('../fonts/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Italic.woff2') format('woff2'),
+    url('../fonts/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins-bolditalic-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins-italic-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-variant: normal;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #EEEEEE;
+
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 576px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: #EEEEEE;
+
+    padding: 4px 16px;
+
+    transition-duration: 200ms;
+}
+
+button:hover {
+    border: 2px solid #8C0303;
+    box-shadow: #8C0303 0 8px;
+    color: #8C0303;
+    transform: translateY(-8px);
+
+    transition-duration: 200ms;
+}
+
+a {
+    color: #8C0303;
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 4px;
+
+    transition-duration: 200ms;
+}
+
+a:hover {
+    color: #EEEEEE;
+    background-color: #8C0303;
+
+    transition-duration: 200ms;
+}
