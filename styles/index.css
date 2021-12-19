@@ -46,11 +46,6 @@
     background: linear-gradient(to right, rgba(140, 0, 0, 255), rgba(0, 0, 0, 0));
 }
 
-.menu-card > figure > img {
-    min-width: 100%;
-    max-width: 100%;
-}
-
 .menu-card > figure > figcaption {
     margin: 0;
     position: absolute;
@@ -69,12 +64,6 @@
     bottom: 0.5em;
     right: 0.5em;
     z-index: 3;
-}
-
-@media (max-width: 576px) {
-    .menu-card > button {
-        display: none;
-    }
 }
 
 /**
@@ -132,33 +121,15 @@ main > .site-map, .catalogs-list {
     justify-content: center;
 }
 
-@media (max-width: 576px) {
-    main > .site-map, .catalogs-list {
-        flex-direction: column;
-    }
-}
-
 main > .site-map > .menu-card {
     flex-grow: 1;
     margin: 0 0.5em;
-}
-
-@media (max-width: 576px) {
-    main > .site-map > .menu-card {
-        margin: 0.5em 0;
-    }
 }
 
 main > .catalogs-list > .menu-card {
     flex-grow: 1;
     margin: 0 .5em;
     height: 16em;
-}
-
-@media (max-width: 576px) {
-    main > .catalogs-list > .menu-card {
-        margin: 0.5em 0;
-    }
 }
 
 article.individual > figure:after {
@@ -185,12 +156,6 @@ nav {
     align-items: center;
 }
 
-@media (max-width: 576px) {
-    nav {
-        flex-direction: column;
-    }
-}
-
 nav > section {
     padding: 0.5em 0;
     margin: 0 1em;
@@ -203,20 +168,8 @@ nav > section {
     align-items: center;
 }
 
-@media (max-width: 576px) {
-    section {
-        width: 90%;
-    }
-}
-
 nav > section > button {
     margin: 0 0.5em;
-}
-
-@media (max-width: 576px) {
-    nav > section > button {
-        flex-grow: 1;
-    }
 }
 
 /**
@@ -241,12 +194,26 @@ footer > * {
     margin: 2em;
 }
 
-@media (max-width: 576px) {
-    footer > * {
-        margin: 0.5em;
-    }
-}
-
 footer > img {
     max-width: 10em;
+}
+
+@media screen and (max-width: 1080px) {
+    .menu-card > button {
+        display: none;
+    }
+
+    main > .site-map, .catalogs-list {
+        flex-direction: column;
+    }
+
+    main > .site-map > .menu-card {
+        margin: 0.5em 0;
+        width: 100%;
+    }
+
+    main > .catalogs-list > .menu-card {
+        margin: 0.5em 0;
+        width: 100%;
+    }
 }
