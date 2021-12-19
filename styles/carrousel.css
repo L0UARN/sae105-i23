@@ -97,18 +97,12 @@
     }
 
     .carrousel > .carrousel-controls > button {
-        height: 100%;
+        margin: 0.25em;
+        height: 95%;
         border: none;
-        border-radius: 0;
         color: #EEEEEE;
-    }
-
-    .carrousel > .carrousel-controls > button:first-of-type {
-        background: linear-gradient(to right, rgba(0, 0, 0, 64), rgba(0, 0, 0, 0));
-    }
-
-    .carrousel > .carrousel-controls > button:last-of-type {
-        background: linear-gradient(to left, rgba(0, 0, 0, 64), rgba(0, 0, 0, 0));
+        background-color: #000000;
+        opacity: 50%;
     }
 
     .carrousel > .carrousel-controls > button:hover {
