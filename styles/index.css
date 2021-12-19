@@ -112,32 +112,6 @@ article.professional > figure:after {
     background: linear-gradient(to right, rgba(19, 38, 72, 255), rgba(0, 0, 0, 0));
 }
 
-/**
- * Footer
- */
-
-footer {
-    margin: 3em 0 0 0;
-    width: 100%;
-    background-color: #000000;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-
-    color: #EEEEEE;
-}
-
-footer > * {
-    margin: 2em;
-}
-
-footer > img {
-    max-width: 10em;
-}
-
 @media screen and (max-width: 1080px) {
     .menu-card > button {
         display: none;
