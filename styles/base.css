@@ -67,17 +67,11 @@ html, body {
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #EEEEEE;
 
     margin: 0;
     padding: 0;
-}
-
-@media (max-width: 576px) {
-    html, body {
-        font-size: 16px;
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -135,6 +129,18 @@ button:hover {
     transition-duration: 200ms;
 }
 
+button.individual:hover {
+    border: 2px solid #2A106E;
+    box-shadow: #2A106E 0 8px;
+    color: #2A106E;
+}
+
+button.professional:hover {
+    border: 2px solid #132648;
+    box-shadow: #132648 0 8px;
+    color: #132648;
+}
+
 a {
     color: #8C0303;
     text-decoration: none;
@@ -149,4 +155,10 @@ a:hover {
     background-color: #8C0303;
 
     transition-duration: 200ms;
+}
+
+@media screen and (max-width: 1080px) {
+    html, body {
+        font-size: 24px;
+    }
 }
