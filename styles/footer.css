@@ -19,3 +19,10 @@ footer > img {
     height: 5em;
     align-self: center;
 }
+
+@media screen and (max-width: 1080px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
