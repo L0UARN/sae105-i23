@@ -2,130 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <!--    <link rel="stylesheet" href="styles/base.css">-->
 <!--    <link rel="stylesheet" href="styles/index.css">-->
 <!--    <link rel="stylesheet" href="styles/header.css">-->
 <!--    <link rel="stylesheet" href="styles/carrousel.css">-->
 <!--    <link rel="stylesheet" href="styles/footer.css">-->
 <!--    <script src="./scripts/carrousel.js"></script>-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <title>Koh Frais</title>
 </head>
 <body>
-    <header>
-        <figure class="logo">
-            <img src="./images/logo_Koh_Frais.png" alt="Logo Koh Frais" title="Logo Koh Frais">
-            <figcaption><h1>Koh Frais</h1></figcaption>
-        </figure>
+    <div class="container-fluid">
+        <header>
+            <figure class="logo row row-cols-2 justify-content-center">
+                <img src="./images/logo_Koh_Frais.png" alt="Logo Koh Frais" title="Logo Koh Frais">
+                <figcaption><h1>Koh Frais</h1></figcaption>
+            </figure>
 
-        <nav>
-            <section>
-                <button>Accueil</button>
-            </section>
-            <section>
-                <button>Nous contacter</button>
-                <button>Points de vente</button>
-                <button>Nos valeurs</button>
-            </section>
-            <section>
-                <button class="individual">Catalogue particulier</button>
-                <button class="professional">Catalogue professionnel</button>
-            </section>
-        </nav>
+            <nav class="row row-cols-3 justify-content-center">
+                <section>
+                    <button>Accueil</button>
+                </section>
+                <section>
+                    <button>Nous contacter</button>
+                    <button>Points de vente</button>
+                    <button>Nos valeurs</button>
+                </section>
+                <section>
+                    <button class="individual">Catalogue particulier</button>
+                    <button class="professional">Catalogue professionnel</button>
+                </section>
+            </nav>
+        </header>
 
-        <section class="carrousel">
-            <article class="carrousel-slide">
-                <figure>
-                    <img src="./images/Coulis_caramel.jpg" alt="Coulis Caramel" title="Coulis Carmel">
-                    <figcaption><h2>Chez Koh Frais, nos produits sont cools.</h2></figcaption>
-                </figure>
-                <button>Vraiment ? Trop cool</button>
-            </article>
-            <article class="carrousel-slide">
-                <figure>
-                    <img src="./images/Coulis_Kiwi.jpg" alt="Coulis Kiwi" title="Coulis Kiwi">
-                    <figcaption><h2>Super phrase super intéressante.</h2></figcaption>
-                </figure>
-                <button>Super bouton</button>
-            </article>
+        <main>
+            <section class="carrousel row row-cols-1 justify-content-center">
+                <article class="carrousel-slide">
+                    <figure>
+                        <img src="./images/Coulis_caramel.jpg" alt="Coulis Caramel" title="Coulis Carmel">
+                        <figcaption><h2>Chez Koh Frais, nos produits sont cools.</h2></figcaption>
+                    </figure>
+                    <button>Vraiment ? Trop cool</button>
+                </article>
+                <article class="carrousel-slide">
+                    <figure>
+                        <img src="./images/Coulis_Kiwi.jpg" alt="Coulis Kiwi" title="Coulis Kiwi">
+                        <figcaption><h2>Super phrase super intéressante.</h2></figcaption>
+                    </figure>
+                    <button>Super bouton</button>
+                </article>
 
-            <div class="carrousel-controls">
-                <button class="left-button">&lt;</button>
-                <p class="slide-number">x / x</p>
-                <button class="right-button">&gt;</button>
+                <div class="carrousel-controls">
+                    <button class="left-button">&lt;</button>
+                    <p class="slide-number">x / x</p>
+                    <button class="right-button">&gt;</button>
+                </div>
+            </section>
+
+            <div class="row row-cols-1 justify-content-start">
+                <h2>Informations</h2>
             </div>
-        </section>
-    </header>
 
-    <main>
-        <h2>Informations</h2>
+            <section class="site-map row row-cols-3 justify-content-center">
+                <article class="menu-card">
+                    <figure>
+                        <img src="./images/nous_contacter.webp" alt="Bac de glace" title="Bac de glace">
+                        <figcaption>Nous contacter</figcaption>
+                    </figure>
+                    <button>Explorer</button>
+                </article>
+                <article class="menu-card">
+                    <figure>
+                        <img src="./images/carte.png" alt="Bac de glace" title="Bac de glace">
+                        <figcaption>Points de vente</figcaption>
+                    </figure>
+                    <button>Explorer</button>
+                </article>
+                <article class="menu-card">
+                    <figure>
+                        <img src="./images/Bac_glace2.jpg" alt="Bac de glace" title="Bac de glace">
+                        <figcaption>Nos valeurs</figcaption>
+                    </figure>
+                    <button>Explorer</button>
+                </article>
+            </section>
 
-        <section class="site-map">
-            <article class="menu-card">
-                <figure>
-                    <img src="./images/nous_contacter.webp" alt="Bac de glace" title="Bac de glace">
-                    <figcaption>Nous contacter</figcaption>
-                </figure>
-                <button>Explorer</button>
-            </article>
-            <article class="menu-card">
-                <figure>
-                    <img src="./images/carte.png" alt="Bac de glace" title="Bac de glace">
-                    <figcaption>Points de vente</figcaption>
-                </figure>
-                <button>Explorer</button>
-            </article>
-            <article class="menu-card">
-                <figure>
-                    <img src="./images/Bac_glace2.jpg" alt="Bac de glace" title="Bac de glace">
-                    <figcaption>Nos valeurs</figcaption>
-                </figure>
-                <button>Explorer</button>
-            </article>
-        </section>
+            <div class="row row-cols-1 justify-content-start">
+                <h2>Catalogues</h2>
+            </div>
 
-        <h2>Catalogues</h2>
+            <section class="catalogs-list row row-cols-2 justify-content-center">
+                <article class="menu-card individual">
+                    <figure>
+                        <img src="./images/Buche_2.jpg" alt="Bac de glace" title="Bac de glace">
+                        <figcaption>Particulier</figcaption>
+                    </figure>
+                    <button class="individual">Explorer</button>
+                </article>
+                <article class="menu-card professional">
+                    <figure>
+                        <img src="./images/Bac_glace2.jpg" alt="Bac de glace" title="Bac de glace">
+                        <figcaption>Professionnel</figcaption>
+                    </figure>
+                    <button class="professional">Explorer</button>
+                </article>
+            </section>
+        </main>
 
-        <section class="catalogs-list">
-            <article class="menu-card individual">
-                <figure>
-                    <img src="./images/Buche_2.jpg" alt="Bac de glace" title="Bac de glace">
-                    <figcaption>Particulier</figcaption>
-                </figure>
-                <button class="individual">Explorer</button>
-            </article>
-            <article class="menu-card professional">
-                <figure>
-                    <img src="./images/Bac_glace2.jpg" alt="Bac de glace" title="Bac de glace">
-                    <figcaption>Professionnel</figcaption>
-                </figure>
-                <button class="professional">Explorer</button>
-            </article>
-        </section>
-    </main>
+        <footer class="row row-cols-3 justify-content-center">
+            <img src="./images/logo_Koh_Frais_inverse.png" alt="Koh Frais" title="Koh Frais">
 
-    <footer>
-        <img src="./images/logo_Koh_Frais_inverse.png" alt="Koh Frais" title="Koh Frais">
+            <section>
+                <h6>Plan du site</h6>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Nous contacter</li>
+                    <li>Points de vente</li>
+                    <li>Nos valeurs</li>
+                    <li>Catalogue particulier</li>
+                    <li>Catalogue professionnel</li>
+                </ul>
+            </section>
 
-        <section>
-            <h6>Plan du site</h6>
-            <ul>
-                <li>Accueil</li>
-                <li>Nous contacter</li>
-                <li>Points de vente</li>
-                <li>Nos valeurs</li>
-                <li>Catalogue particulier</li>
-                <li>Catalogue professionnel</li>
-            </ul>
-        </section>
-
-        <section>
-            <h6>Site web</h6>
-            <ul>
-                <li>Louarn RICHARD</li>
-                <li>Gwendal AUBÉ</li>
-                <li>Kenny LESTOUQUET</li>
-            </ul>
-        </section>
-    </footer>
+            <section>
+                <h6>Site web</h6>
+                <ul>
+                    <li>Louarn RICHARD</li>
+                    <li>Gwendal AUBÉ</li>
+                    <li>Kenny LESTOUQUET</li>
+                </ul>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
