@@ -4,9 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Koh Frais</title>
 </head>
-<body>
+<body class="container-fluid">
+    <header>
+        <section class="row justify-content-center align-items-center">
+            <!-- <div class="d-sm-block d-lg-none"> TODO: Menu burger-->
+            <img class="col-auto img-fluid" src="images/logo_Koh_Frais.png" alt="Koh Frais" title="Logo Koh Frais">
+            <h1 class="col-auto">Koh Frais - Accueil</h1>
+        </section>
 
+        <nav class="row justify-content-center d-sm-none d-lg-flex">
+            <section class="col-auto">
+                <button>Accueil</button>
+            </section>
+            <section class="col-auto">
+                <button>Nous contacter</button>
+                <button>Points de vente</button>
+                <button>Nos valeurs</button>
+            </section>
+            <section class="col-auto">
+                <button>Catalogue particulier</button>
+                <button>Catalogue professionnel</button>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row">
+            <h2>Notre présentation & informations</h2>
+        </div>
+
+        <section class="row justify-content-center">
+            <article class="col-sm-12 col-lg-4">
+                <figure><img class="img-fluid" src="images/nous_contacter.webp" alt="Contact" title="Nous contacter"></figure>
+                <h2>Nous contacter</h2>
+                <button>Plus d'informations</button>
+            </article>
+
+            <article class="col-sm-12 col-lg-4">
+                <figure><img class="img-fluid" src="images/carte.png" alt="Carte" title="Points de vente"></figure>
+                <h2>Points de vente</h2>
+                <button>Explorer</button>
+            </article>
+
+            <article class="col-sm-12 col-lg-4">
+                <figure><img class="img-fluid" src="images/Coulis_caramel.jpg" alt="Valeurs" title="Nos valeurs"></figure>
+                <h2>Nos valeurs</h2>
+                <button>Lire l'article</button>
+            </article>
+        </section>
+
+        <div class="row">
+            <h2>Nos catalogues</h2>
+        </div>
+
+        <section class="row justify-content-center">
+            <article class="col-sm-12 col-lg-6">
+                <figure><img src="images/coupe_individuelle_Fete.jpg" alt="Catalogue particulier" title="Catalogue particulier"></figure>
+                <h2>Catalogue particulier</h2>
+                <button>Voir les produits</button>
+            </article>
+
+            <article class="col-sm-12 col-lg-6">
+                <figure><img src="images/Bac_glace1.jpg" alt="Catalogue professionnel" title="Catalogue professionnel"></figure>
+                <h2>Catalogue professionnel</h2>
+                <button>Voir les produits</button>
+            </article>
+        </section>
+    </main>
+
+    <footer class="row justify-content-center">
+        <img class="img-fluid col-sm-12 col-lg-auto" src="images/logo_Koh_Frais_inverse.png" alt="Koh Frais" title="Logo Koh Frais">
+        <div class="col-sm-12 col-lg-auto">
+            <h3>Plan du site</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Points de vente</a></li>
+                <li><a href="#">Nos valeurs</a></li>
+                <li><a href="#">Catalogue particulier</a></li>
+                <li><a href="#">Catalogue professionnel</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-lg-auto">
+            <h3>Réalisation du site</h3>
+            <ul>
+                <li>Louarn RICHARD</li>
+                <li>Gwendal AUBÉ</li>
+                <li>Kenny LESTOUQUET</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

@@ -26,3 +26,10 @@
 /*        align-items: center;*/
 /*    }*/
 /*}*/
+
+footer {
+    color: #EEEEEE;
+    background-color: #000000;
+    padding: 1em;
+    font-size: 0.8em;
+}
