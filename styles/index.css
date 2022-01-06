@@ -136,20 +136,31 @@ main, main > div, main > section {
     margin: 1em 0;
 }
 
-main > section > article {
+main > section > div > article {
     border-radius: 4px;
     position: relative;
     height: 16em;
     overflow: hidden;
+
+    transition-duration: 200ms;
 }
 
-main > section > article > figure {
-    position: relative;
+main > section > div > article:hover {
+    transform: perspective(20cm) rotateX(3deg);
+    box-shadow: #666666 0 8px 8px;
+
+    transition-duration: 200ms;
+}
+
+main > section > div > article > figure {
+    position: absolute;
+    top: 0;
+    left: 0;
     margin: 0;
     padding: 0;
 }
 
-main > section > article > figure:after {
+main > section > div > article > figure:after {
     content: '';
     position: absolute;
     top: 0;
@@ -160,15 +171,15 @@ main > section > article > figure:after {
     background: linear-gradient(to right, rgba(140, 3, 3, 0.5), rgba(140, 3, 3, 0.0));
 }
 
-main > section > article > figure.individual:after {
+main > section > div > article > figure.individual:after {
     background: linear-gradient(to right, rgba(42, 16, 110, 0.5), rgba(140, 3, 3, 0.0));
 }
 
-main > section > article > figure.professional:after {
+main > section > div > article > figure.professional:after {
     background: linear-gradient(to right, rgba(19, 38, 72, 0.5), rgba(140, 3, 3, 0.0));
 }
 
-main > section > article > h2 {
+main > section > div > article > h2 {
     color: #EEEEEE;
     position: absolute;
     top: 50%;
@@ -177,7 +188,7 @@ main > section > article > h2 {
     z-index: 2;
 }
 
-main > section > article > button {
+main > section > div > article > button {
     position: absolute;
     bottom: 0.5em;
     right: 0.5em;
