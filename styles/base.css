@@ -105,7 +105,7 @@ h6 {
     font-size: 1.2em;
 }
 
-button {
+button:not(.carousel-button) {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -120,7 +120,7 @@ button {
     transition-duration: 200ms;
 }
 
-button:hover {
+button:hover:not(.carousel-button) {
     border: 2px solid #8C0303;
     box-shadow: #8C0303 0 8px;
     color: #8C0303;

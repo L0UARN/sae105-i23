@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <script src="bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -35,6 +36,37 @@
     </header>
 
     <main>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active carousel-button" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" class="carousel-button" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Fruits_framboises.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption">
+                        <h2>Koh Frais c'est cool.</h2>
+                        <button>Ah ouais ?</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Fruits_myrtilles.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption">
+                        <h2>Nous produits sont super bons.</h2>
+                        <button>J'veux gouter !</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev carousel-button" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-button" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <div class="row">
             <h2>Notre présentation & informations</h2>
         </div>
