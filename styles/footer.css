@@ -33,3 +33,7 @@ footer {
     padding: 1em;
     font-size: 0.8em;
 }
+
+footer > img {
+    max-height: 8em;
+}
