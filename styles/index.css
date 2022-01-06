@@ -160,6 +160,14 @@ main > section > article > figure:after {
     background: linear-gradient(to right, rgba(140, 3, 3, 0.5), rgba(140, 3, 3, 0.0));
 }
 
+main > section > article > figure.individual:after {
+    background: linear-gradient(to right, rgba(42, 16, 110, 0.5), rgba(140, 3, 3, 0.0));
+}
+
+main > section > article > figure.professional:after {
+    background: linear-gradient(to right, rgba(19, 38, 72, 0.5), rgba(140, 3, 3, 0.0));
+}
+
 main > section > article > h2 {
     color: #EEEEEE;
     position: absolute;

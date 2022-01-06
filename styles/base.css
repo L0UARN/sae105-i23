@@ -157,6 +157,24 @@ a:hover {
     transition-duration: 200ms;
 }
 
+a.individual {
+    color: #2A106E;
+}
+
+a.individual:hover {
+    color: #EEEEEE;
+    background-color: #2A106E;
+}
+
+a.professional {
+    color: #132648;
+}
+
+a.professional:hover {
+    color: #EEEEEE;
+    background-color: #132648;
+}
+
 @media screen and (max-width: 1080px) {
     html, body {
         font-size: 32px;
