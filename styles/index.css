@@ -132,7 +132,7 @@
 /*    }*/
 /*}*/
 
-main > div {
+main, main > div, main > section {
     margin: 1em 0;
 }
 
