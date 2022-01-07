@@ -132,11 +132,15 @@
 /*    }*/
 /*}*/
 
-main, main > div, main > section {
+main, main > div, main > section, main > .carousel {
     margin: 1em 0;
 }
 
-main > .carousel, .carousel-inner, .carousel-indicators, .carousel-item {
+.carousel {
+    border: 1px solid #000000;
+}
+
+.carousel, .carousel-inner, .carousel-indicators, .carousel-item {
     border-radius: 4px;
     max-height: 24em;
     overflow: hidden;
@@ -166,6 +170,7 @@ main > .carousel, .carousel-inner, .carousel-indicators, .carousel-item {
 }
 
 main > section > div > article {
+    border: 1px solid #000000;
     border-radius: 4px;
     position: relative;
     height: 16em;
