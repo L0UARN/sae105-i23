@@ -17,7 +17,15 @@ main, main > div, main > section, main > .carousel {
 }
 
 .carousel-caption > * {
-    margin: 1em 0;
+    margin: 0.5em 0;
+}
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-inner {

@@ -23,6 +23,10 @@ footer > div > section > ul {
     padding-left: 0.5em;
 }
 
+footer > div > section > ul > li {
+    margin: 0.5em 0;
+}
+
 @media screen and (min-width: 992px) {
     footer > div:first-of-type {
         display: flex;
