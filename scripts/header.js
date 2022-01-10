@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     let ouvert = false;
 
     burger.onclick = () => {
-        menu.style.height = ouvert ? '4em' : 'fit-content';
+        menu.style.height = ouvert ? '3.5em' : 'fit-content';
         ouvert = !ouvert;
     };
 });
