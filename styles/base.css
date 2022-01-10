@@ -142,40 +142,31 @@ button.professional:hover {
 }
 
 a {
-    color: #8C0303;
+    color: #EEEEEE;
     text-decoration: none;
-    padding: 2px 4px;
+    padding: 4px 6px;
     border-radius: 4px;
+    background-color: #8C0303;
 
     transition-duration: 200ms;
 }
 
 a:hover {
     color: #EEEEEE;
-    background-color: #8C0303;
+    text-decoration: underline;
 
     transition-duration: 200ms;
 }
 
 a.individual {
-    color: #2A106E;
-}
-
-a.individual:hover {
-    color: #EEEEEE;
     background-color: #2A106E;
 }
 
 a.professional {
-    color: #132648;
-}
-
-a.professional:hover {
-    color: #EEEEEE;
     background-color: #132648;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 992px) {
     html, body {
         font-size: 24px;
     }
