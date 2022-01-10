@@ -1,9 +1,58 @@
-header > section {
-    padding: 1em;
+.burger-icon {
+    position: relative;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
 }
 
-header > section > img {
+.burger-icon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 1.5em;
+    height: 0.2em;
+    background-color: #000000;
+    border-radius: 4px;
+    box-shadow: 0 -0.5em 0 #000000, 0 0.5em 0 #000000;
+
+    transition-duration: 200ms;
+}
+
+.burger-icon:hover:after {
+    background-color: #8C0303;
+    box-shadow: 0 -0.5em 0 #8C0303, 0 0.5em 0 #8C0303;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+
+    transition-duration: 200ms;
+}
+
+header {
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+header > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 1em;
+}
+
+header > section > div > img {
     max-height: 6em;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 header > nav > section {
@@ -11,89 +60,37 @@ header > nav > section {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: center;
 
-    padding: 0.5em;
-    margin: 1em;
+    padding: 0.5em 0;
+    margin: 0 0.5em;
     border-bottom: 4px solid #000000;
 }
 
 header > nav > section > button {
     width: 100%;
-    height: 100%;
     margin: 0 0.5em;
 }
 
 header > nav > section > button:first-of-type {
+    width: 100%;
     margin-left: 0;
 }
 
 header > nav > section > button:last-of-type {
+    width: 100%;
     margin-right: 0;
 }
 
-#burger > button {
-    height: 3em;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#burger > button > span  {
-    display: block;
-    width: 2em;
-    height: 0.2em;
-    background-color: #000000;
-    border-radius: 4px;
-}
-
-#burger > button > span:before {
-    content: '';
-    display: block;
-    position: relative;
-    top: -0.5em;
-    width: 2em;
-    height: 0.2em;
-    background-color: #000000;
-    border-radius: 4px;
-}
-
-#burger > button > span:after {
-    content: '';
-    display: block;
-    position: relative;
-    top: 0.3em;
-    width: 2em;
-    height: 0.2em;
-    background-color: #000000;
-    border-radius: 4px;
-}
-
 @media screen and (max-width: 992px) {
-    header > nav > section:not(#burger) {
+    header > nav > section {
         border-bottom: none;
-        margin: 0;
-        padding: 0.25em 1.5em;
     }
 
-    #burger {
-        border-bottom: none;
-        margin-bottom: 0.5em;
-    }
-
-    #burger:hover > button > span, #burger:hover > button > span:before, #burger:hover > button > span:after {
-        background-color: #8C0303;
-    }
-
-    header > nav > section > button {
-        margin: 0 0.25em;
-    }
-
-    header > nav {
-        height: 3.5em;
-        overflow: hidden;
+    header > nav > section:first-of-type > button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }

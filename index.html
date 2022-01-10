@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="scripts/header.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
@@ -14,39 +13,27 @@
 </head>
 <body class="container-fluid">
     <header>
-        <section class="row justify-content-center align-items-center">
-            <img class="col-auto img-fluid" src="images/logo_Koh_Frais.png" alt="Koh Frais" title="Logo Koh Frais">
-            <h1 class="col-auto">Koh Frais - Accueil</h1>
+        <section class="row">
+            <div class="col-auto">
+                <img src="images/logo_Koh_Frais.png" alt="Koh Frais" title="Logo Koh Frais">
+            </div>
+            <h1 class="col-auto d-none d-lg-inline">Koh Frais - Accueil</h1>
+            <h1 class="col-auto d-inline d-lg-none">Accueil</h1>
         </section>
 
-        <nav class="row justify-content-center d-none d-lg-flex">
-            <section class="col-1">
+        <nav class="row">
+            <section class="d-flex d-lg-none col-12">
+                <button><span class="burger-icon"></span><strong>Menu</strong></button>
+            </section>
+            <section class="col-12 col-lg-2">
                 <button>Accueil</button>
             </section>
-            <section class="col-4">
+            <section class="col-12 col-lg-4">
                 <button>Nous contacter</button>
                 <button>Points de vente</button>
                 <button>Nos valeurs</button>
             </section>
-            <section class="col-4">
-                <button>Catalogue particulier</button>
-                <button>Catalogue professionnel</button>
-            </section>
-        </nav>
-
-        <nav class="row justify-content-center d-flex d-lg-none" id="menu">
-            <section class="col-12" id="burger">
-                <button><span></span><h4>Menu</h4></button>
-            </section>
-            <section class="col-12">
-                <button>Accueil</button>
-            </section>
-            <section class="col-12">
-                <button>Nous contacter</button>
-                <button>Points de vente</button>
-                <button>Nos valeurs</button>
-            </section>
-            <section class="col-12">
+            <section class="col-12 col-lg-4">
                 <button>Catalogue particulier</button>
                 <button>Catalogue professionnel</button>
             </section>
@@ -89,7 +76,7 @@
             <h2>Notre présentation & informations</h2>
         </div>
 
-        <section class="row justify-content-center">
+        <section class="row">
             <div class="col-12 col-lg-4">
                 <article>
                     <figure><img class="img-fluid" src="images/nous_contacter.webp" alt="Contact" title="Nous contacter"></figure>
@@ -119,7 +106,7 @@
             <h2>Nos catalogues</h2>
         </div>
 
-        <section class="row justify-content-center">
+        <section class="row">
             <div class="col-12 col-lg-6">
                 <article>
                     <figure class="individual"><img src="images/coupe_individuelle_Fete.jpg" alt="Catalogue particulier" title="Catalogue particulier"></figure>
@@ -138,7 +125,7 @@
         </section>
     </main>
 
-    <footer class="row justify-content-lg-center">
+    <footer class="row">
         <div class="col-12 col-lg-auto">
             <img src="images/logo_Koh_Frais_inverse.png" alt="Koh Frais" title="Logo Koh Frais">
         </div>
