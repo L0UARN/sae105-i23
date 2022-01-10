@@ -1,25 +1,30 @@
 footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+
     color: #EEEEEE;
     background-color: #000000;
-    padding: 1em;
+    padding: 1em 0;
     font-size: 0.9em;
 }
 
+footer > div {
+    margin: 0 1em;
+}
+
 footer > div:first-of-type {
-    text-align: center;
+    align-self: center;
 }
 
 footer > div > img {
-    max-height: 8em;
-}
-
-footer > div > section {
-    padding: 1em;
+    max-height: 6em;
 }
 
 footer > div > section > ul {
     list-style: none;
-    margin-top: 1em;
     padding-left: 0.5em;
 }
 
@@ -27,11 +32,12 @@ footer > div > section > ul > li {
     margin: 0.5em 0;
 }
 
-@media screen and (min-width: 992px) {
-    footer > div:first-of-type {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+@media screen and (max-width: 992px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer > div {
+        margin: 1em 0;
     }
 }
