@@ -1,69 +1,99 @@
-header {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+header > section {
+    padding: 1em;
 }
 
-header > figure {
-    margin: 1em 0;
-    width: 100%;
+header > section > img {
+    max-height: 6em;
+}
 
+header > nav > section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-content: center;
+
+    padding: 0.5em;
+    margin: 1em;
+    border-bottom: 4px solid #000000;
 }
 
-header > figure > img {
-    max-height: 5em;
-}
-
-header > figure > figcaption {
-    margin-left: 2em;
-}
-
-nav {
-    margin: 1em 0;
+header > nav > section > button {
     width: 100%;
-    background-color: #EEEEEE;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-nav > section {
-    padding: 0.5em 0;
-    margin: 0 1em;
-    border-bottom: 3px solid #000000;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-nav > section > button {
+    height: 100%;
     margin: 0 0.5em;
 }
 
-@media screen and (max-width: 1080px) {
-    header > figure > img {
-        max-height: 3em;
+header > nav > section > button:first-of-type {
+    margin-left: 0;
+}
+
+header > nav > section > button:last-of-type {
+    margin-right: 0;
+}
+
+#burger > button {
+    height: 3em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#burger > button > span  {
+    display: block;
+    width: 2em;
+    height: 0.2em;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+#burger > button > span:before {
+    content: '';
+    display: block;
+    position: relative;
+    top: -0.5em;
+    width: 2em;
+    height: 0.2em;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+#burger > button > span:after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 0.3em;
+    width: 2em;
+    height: 0.2em;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 992px) {
+    header > nav > section:not(#burger) {
+        border-bottom: none;
+        margin: 0;
+        padding: 0.25em 1.5em;
     }
 
-    nav {
-        flex-direction: column;
+    #burger {
+        border-bottom: none;
+        margin-bottom: 0.5em;
     }
 
-    nav > section {
-        width: 95%;
+    #burger:hover > button > span, #burger:hover > button > span:before, #burger:hover > button > span:after {
+        background-color: #8C0303;
     }
 
-    nav > section > button {
-        width: 100%;
-        height: 3em;
-        margin: 0 0.5em;
+    header > nav > section > button {
+        margin: 0 0.25em;
+    }
+
+    header > nav {
+        height: 3.5em;
+        overflow: hidden;
     }
 }

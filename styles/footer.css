@@ -1,28 +1,37 @@
 footer {
-    margin: 3em 0 0 0;
-    width: 100%;
-    background-color: #000000;
-
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-
     color: #EEEEEE;
+    background-color: #000000;
+    padding: 1em;
+    font-size: 0.8em;
 }
 
-footer > * {
-    margin: 1em 2em;
+footer > div:first-of-type {
+    text-align: center;
 }
 
-footer > img {
-    height: 5em;
-    align-self: center;
+footer > div > img {
+    max-height: 8em;
 }
 
-@media screen and (max-width: 1080px) {
-    footer {
-        flex-direction: column;
+footer > div > section {
+    padding: 1em;
+}
+
+footer > div > section > ul {
+    list-style: none;
+    margin-top: 1em;
+    padding-left: 0.5em;
+}
+
+footer > div > section > ul > li {
+    margin: 0.5em 0;
+}
+
+@media screen and (min-width: 992px) {
+    footer > div:first-of-type {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
 }
