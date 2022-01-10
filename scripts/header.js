@@ -1,10 +1,11 @@
 window.addEventListener('load', () => {
-    let burger = document.getElementById('burger');
-    let menu = document.getElementById('menu');
     let ouvert = false;
+    let menu = document.getElementById('nav-menu');
+    menu.style.overflow = 'hidden';
+    menu.style.height = '3.5em';
 
-    burger.onclick = () => {
-        menu.style.height = ouvert ? '3.5em' : 'fit-content';
+    document.getElementById('burger-activator').addEventListener('click', () => {
         ouvert = !ouvert;
-    };
+        menu.style.height = ouvert ? 'auto' : '3.5em';
+    });
 });
