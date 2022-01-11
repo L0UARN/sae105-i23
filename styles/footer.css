@@ -16,6 +16,10 @@ footer > div {
 }
 
 footer > div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     align-self: center;
 }
 
@@ -33,10 +37,6 @@ footer > div > section > ul > li {
 }
 
 @media screen and (max-width: 992px) {
-    footer {
-        flex-direction: column;
-    }
-
     footer > div {
         margin: 1em 0;
     }
