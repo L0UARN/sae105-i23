@@ -1,0 +1,73 @@
+.produit {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin: 1em 0;
+}
+
+.produit > figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.produit > figure:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(19, 38, 72, 0.5), rgba(140, 3, 3, 0.0));
+}
+
+.produit:hover > figure > img {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.produit > figure > img {
+    max-width: 100%;
+    transition-duration: 200ms;
+}
+
+.produit > h3 {
+    margin: 0.25em 0 0 12px;
+}
+
+.produit > p {
+    margin: 0.5em 0 0 12px;
+}
+
+.produit > button {
+    margin: 1em;
+    align-self: end;
+}
+
+.filtre {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.filtre > p {
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.filtre > div {
+    margin: 0.5em 1em;
+}
