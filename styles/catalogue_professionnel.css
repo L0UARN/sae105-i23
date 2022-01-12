@@ -1,4 +1,6 @@
 .produit {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -41,6 +43,31 @@
 .produit > figure > img {
     max-width: 100%;
     /*transition-duration: 200ms;*/
+}
+
+.produit > aside {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: start;
+}
+
+.produit > aside > img {
+    max-width: 4em;
+    margin: 0 0.5em;
+    border: 1px solid #000000;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.produit > aside > img:last-of-type {
+    margin-right: 0;
 }
 
 .produit > h3 {
