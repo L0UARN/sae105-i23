@@ -1,0 +1,3 @@
+.produit > figure:after {
+    background: linear-gradient(to right, rgba(42, 16, 110, 0.5), rgba(42, 16, 110, 0.1));
+}
