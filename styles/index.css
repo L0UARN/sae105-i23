@@ -4,12 +4,7 @@ main, main > div, main > section, main > .carousel {
 
 .carousel {
     border: 1px solid #000000;
-}
-
-.carousel, .carousel-inner, .carousel-indicators, .carousel-item {
     border-radius: 4px;
-    max-height: 24em;
-    overflow: hidden;
 }
 
 .carousel-caption, .carousel-indicators {
