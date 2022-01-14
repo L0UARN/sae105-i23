@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts/header.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/points_de_vente.css">
+    <link rel="icon" href="images/logos/icone.png">
+    <title>Koh Frais - Points de vente</title>
+</head>
+<body class="container-fluid">
+<header>
+    <section class="row">
+        <div class="col-auto">
+            <img src="images/logos/logo.png" alt="Koh Frais" title="Logo Koh Frais">
+        </div>
+        <h1 class="col-auto d-none d-lg-inline">Koh Frais - Points de vente</h1>
+        <h1 class="col-auto d-inline d-lg-none">Points de vente</h1>
+    </section>
+
+    <nav class="row" id="nav-menu">
+        <section class="d-flex d-lg-none col-12" id="burger-activator">
+            <button><span class="burger-icon"></span><strong>Menu</strong></button>
+        </section>
+        <section class="col-12 col-lg-2">
+            <button onclick="window.location='index.html'">Accueil</button>
+        </section>
+        <section class="col-12 col-lg-4">
+            <button>Nous contacter</button>
+            <button onclick="window.location='points_de_vente.html'">Points de vente</button>
+            <button>Nos valeurs</button>
+        </section>
+        <section class="col-12 col-lg-4">
+            <button class="individual" onclick="window.location='catalogue_particulier.html'">Catalogue particulier</button>
+            <button class="professional" onclick="window.location='catalogue_professionnel.html'">Catalogue professionnel</button>
+        </section>
+    </nav>
+</header>
+
+<main>
+    <div class="row">
+        <h1 class="col-12">Carte de nos points de vente</h1>
+    </div>
+    <div class="row">
+        <div><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-3.459180593490601%2C48.75477411452126%2C-3.445018529891968%2C48.76095583419932&amp;layer=mapnik&amp;marker=48.75786506945105%2C-3.452099561691284"></iframe></div>
+    </div>
+</main>
+
+<footer class="row">
+    <div class="col-12 col-lg-auto">
+        <img src="images/logos/logo_negatif.png" alt="Koh Frais" title="Logo Koh Frais">
+    </div>
+    <div class="col-12 col-lg-auto">
+        <section>
+            <h3>Plan du site</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="points_de_vente.html">Points de vente</a></li>
+                <li><a href="#">Nos valeurs</a></li>
+                <li><a class="individual" href="catalogue_particulier.html">Catalogue particulier</a></li>
+                <li><a class="professional" href="catalogue_professionnel.html">Catalogue professionnel</a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="col-12 col-lg-auto">
+        <section>
+            <h3>Réalisation du site</h3>
+            <ul>
+                <li>Louarn RICHARD</li>
+                <li>Gwendal AUBÉ</li>
+                <li>Kenny LESTOUQUET</li>
+            </ul>
+        </section>
+    </div>
+</footer>
+</body>
+</html>
