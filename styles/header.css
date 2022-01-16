@@ -44,6 +44,12 @@ header > section {
     margin-bottom: 1em;
 }
 
+header > section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header > section > div > img {
     max-height: 6em;
 }
@@ -82,6 +88,10 @@ header > nav > section > button:last-of-type {
 }
 
 @media screen and (max-width: 992px) {
+    header > section > h1 {
+        text-align: center;
+    }
+
     header > nav {
         overflow: hidden;
         height: 3.5em;
