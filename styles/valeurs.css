@@ -1,0 +1,16 @@
+main div {
+    max-height: 200px;
+}
+
+div img {
+    /*max-width: 100%;*/
+    transform: translateY(-24%);
+}
+
+section + section div img {
+    transform: translateY(-37%);
+}
+
+h2 {
+    color: #EEEEEE;
+}
