@@ -1,5 +1,6 @@
-main div {
+main > section > div {
     max-height: 12em;
+    overflow: hidden;
 }
 
 main > section:first-of-type > div > img {
@@ -12,4 +13,18 @@ main > section:last-of-type > div > img {
 
 h2 {
     color: #EEEEEE;
+}
+
+@media screen and (max-width: 992px) {
+    main > section > div {
+        height: 8em;
+    }
+
+    main > section:first-of-type > div > img {
+        transform: none;
+    }
+
+    main > section:last-of-type > div > img {
+        transform: none;
+    }
 }
