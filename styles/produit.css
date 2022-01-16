@@ -1,0 +1,44 @@
+footer {
+    color: #EEEEEE;
+}
+
+.etiquettes {
+    max-height: 2em;
+    max-width: 6em;
+}
+
+section aside {
+    /*max-width: 1800px;*/
+    max-height: 4em;
+}
+
+aside img {
+    max-width: 100%;
+}
+
+/*
+section > img {
+    max-width: 100%;
+    transform: translateY(-50%);
+}
+
+section {
+    max-height: 1000px;
+    overflow: hidden;
+}*/
+
+.img-produit {
+    max-height: 8em;
+    overflow: hidden;
+}
+
+.img-produit img {
+    max-width: 100%;
+    transform: translateY(-45%);
+}
+
+@media screen and (max-width: 992px) {
+    aside img {
+        max-width: 4em;
+    }
+}

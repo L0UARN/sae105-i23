@@ -1,0 +1,15 @@
+main div {
+    max-height: 12em;
+}
+
+main > section:first-of-type > div > img {
+    transform: translateY(-25%);
+}
+
+main > section:last-of-type > div > img {
+    transform: translateY(-30%);
+}
+
+h2 {
+    color: #EEEEEE;
+}
