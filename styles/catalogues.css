@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     border: 1px solid #000000;
     border-radius: 4px;
@@ -47,8 +47,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: end;
-    align-items: start;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .produit > aside > img {
@@ -73,7 +73,7 @@
 
 .produit > button {
     margin: 1em;
-    align-self: end;
+    align-self: flex-end;
 }
 
 .filtre {
@@ -82,7 +82,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 
     border: 1px solid #000000;

@@ -3,7 +3,7 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 
     color: #EEEEEE;
     background-color: #000000;
