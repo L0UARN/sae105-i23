@@ -3,18 +3,18 @@ footer {
 }
 
 .etiquettes {
-    max-height: 34px;
-    max-width: 200px
+    max-height: 2em;
+    max-width: 6em;
 }
 
 section aside {
     /*max-width: 1800px;*/
-    max-height: 80px;
+    max-height: 4em;
 }
 
 aside img {
-    width: 30px;
-    height: 30px;
+    width: 1.5em;
+    height: 1.5em;
 }
 /*
 section > img {
@@ -28,7 +28,7 @@ section {
 }*/
 
 .img-produit {
-    max-height: 300px;
+    max-height: 8em;
     overflow: hidden;
 }
 
