@@ -1,14 +1,13 @@
 main div {
-    max-height: 8em;
+    max-height: 12em;
 }
 
-main > div img {
-    /*max-width: 100%;*/
-    transform: translateY(-24%);
+main > section:first-of-type > div > img {
+    transform: translateY(-25%);
 }
 
-section + section div img {
-    transform: translateY(-37%);
+main > section:last-of-type > div > img {
+    transform: translateY(-30%);
 }
 
 h2 {
