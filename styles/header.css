@@ -82,6 +82,11 @@ header > nav > section > button:last-of-type {
 }
 
 @media screen and (max-width: 992px) {
+    header > nav {
+        overflow: hidden;
+        height: 3.5em;
+    }
+
     header > nav > section {
         border-bottom: none;
     }
