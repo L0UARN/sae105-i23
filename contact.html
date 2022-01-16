@@ -4,41 +4,44 @@
         <meta charset="UTF-8">
         <title>Koh Frais - Nous contacter</title>
 
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="scripts/header.js"></script>
+
         <!--Styles-->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" type="text/css" href="styles/contact.css" />
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/contact.css" />
     </head>
     <body>
-        <header>
-            <section class="row">
-                <div class="col-auto">
-                    <img src="images/logo_Koh_Frais.png" alt="Koh Frais" title="Logo Koh Frais">
-                </div>
-                <h1 class="col-auto d-none d-lg-inline">Koh Frais - Nous contacter</h1>
-                <h1 class="col-auto d-inline d-lg-none">Nous contacter</h1>
-            </section>
+    <header>
+        <section class="row">
+            <div class="col-auto">
+                <img src="images/logos/logo.png" alt="Koh Frais" title="Logo Koh Frais">
+            </div>
+            <h1 class="col-auto d-none d-lg-inline">Koh Frais - Accueil</h1>
+            <h1 class="col-auto d-inline d-lg-none">Accueil</h1>
+        </section>
 
-            <nav class="row" id="nav-menu">
-                <section class="d-flex d-lg-none col-12" id="burger-activator">
-                    <button><span class="burger-icon"></span><strong>Menu</strong></button>
-                </section>
-                <section class="col-12 col-lg-2">
-                    <button>Accueil</button>
-                </section>
-                <section class="col-12 col-lg-4">
-                    <button>Nous contacter</button>
-                    <button>Points de vente</button>
-                    <button>Nos valeurs</button>
-                </section>
-                <section class="col-12 col-lg-4">
-                    <button>Catalogue particulier</button>
-                    <button>Catalogue professionnel</button>
-                </section>
-            </nav>
-        </header>
+        <nav class="row" id="nav-menu">
+            <section class="d-flex d-lg-none col-12" id="burger-activator">
+                <button><span class="burger-icon"></span><strong>Menu</strong></button>
+            </section>
+            <section class="col-12 col-lg-2">
+                <button onclick="window.location='index.html'">Accueil</button>
+            </section>
+            <section class="col-12 col-lg-4">
+                <button>Nous contacter</button>
+                <button onclick="window.location='points_de_vente.html'">Points de vente</button>
+                <button>Nos valeurs</button>
+            </section>
+            <section class="col-12 col-lg-4">
+                <button class="individual" onclick="window.location='catalogue_particulier.html'">Catalogue particulier</button>
+                <button class="professional" onclick="window.location='catalogue_professionnel.html'">Catalogue professionnel</button>
+            </section>
+        </nav>
+    </header>
 
         <main class="container">
             <section>
@@ -86,33 +89,33 @@
                 </article>
             </section>
         </main>
-        <footer class="row">
-            <div class="col-12 col-lg-auto">
-                <img src="images/logo_Koh_Frais_inverse.png" alt="Koh Frais" title="Logo Koh Frais">
-            </div>
-            <div class="col-12 col-lg-auto">
-                <section>
-                    <h3>Plan du site</h3>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="contact.html">Nous contacter</a></li>
-                        <li><a href="#">Points de vente</a></li>
-                        <li><a href="valeurs.html">Nos valeurs</a></li>
-                        <li><a class="individual" href="#">Catalogue particulier</a></li>
-                        <li><a class="professional" href="#">Catalogue professionnel</a></li>
-                    </ul>
-                </section>
-            </div>
-            <div class="col-12 col-lg-auto">
-                <section>
-                    <h3>Réalisation du site</h3>
-                    <ul>
-                        <li>Louarn RICHARD</li>
-                        <li>Gwendal AUBÉ</li>
-                        <li>Kenny LESTOUQUET</li>
-                    </ul>
-                </section>
-            </div>
-        </footer>
+    <footer class="row">
+        <div class="col-12 col-lg-auto">
+            <img src="images/logos/logo_negatif.png" alt="Koh Frais" title="Logo Koh Frais">
+        </div>
+        <div class="col-12 col-lg-auto">
+            <section>
+                <h3>Plan du site</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="points_de_vente.html">Points de vente</a></li>
+                    <li><a href="#">Nos valeurs</a></li>
+                    <li><a class="individual" href="catalogue_particulier.html">Catalogue particulier</a></li>
+                    <li><a class="professional" href="catalogue_professionnel.html">Catalogue professionnel</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-12 col-lg-auto">
+            <section>
+                <h3>Réalisation du site</h3>
+                <ul>
+                    <li>Louarn RICHARD</li>
+                    <li>Gwendal AUBÉ</li>
+                    <li>Kenny LESTOUQUET</li>
+                </ul>
+            </section>
+        </div>
+    </footer>
     </body>
 </html>
