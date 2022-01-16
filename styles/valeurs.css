@@ -2,7 +2,7 @@ main div {
     max-height: 8em;
 }
 
-div img {
+main > div img {
     /*max-width: 100%;*/
     transform: translateY(-24%);
 }
