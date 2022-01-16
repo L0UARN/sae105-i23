@@ -8,24 +8,12 @@ footer {
 }
 
 section aside {
-    /*max-width: 1800px;*/
     max-height: 4em;
 }
 
 aside img {
     max-width: 100%;
 }
-
-/*
-section > img {
-    max-width: 100%;
-    transform: translateY(-50%);
-}
-
-section {
-    max-height: 1000px;
-    overflow: hidden;
-}*/
 
 .img-produit {
     max-height: 8em;
