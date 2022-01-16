@@ -1,18 +1,9 @@
-section div {
-    max-width: 20em;
-}
-
 main img {
     max-width: 100%;
 }
-@media screen and (max-width: 992px){
-    section div {
-        max-width: 100%;
-    }
 
-    main img {
-        max-width: 4em;
-    }
+main img {
+    max-width: 10em;
 }
 
 main a {
