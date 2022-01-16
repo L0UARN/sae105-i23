@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <title>Page produit</title>
 
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="scripts/header.js"></script>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/produit.css" />
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../scripts/header.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/produit.css" />
 </head>
 
 <body class="container-fluid">
 <header>
     <section class="row">
         <div class="col-auto">
-            <img src="images/logos/logo.png" alt="Koh Frais" title="Logo Koh Frais">
+            <img src="../images/logos/logo.png" alt="Koh Frais" title="Logo Koh Frais">
         </div>
-        <h1 class="col-auto d-none d-lg-inline">Koh Frais - Accueil</h1>
-        <h1 class="col-auto d-inline d-lg-none">Accueil</h1>
+        <h1 class="col-auto d-none d-lg-inline">Koh Frais - Catalogue Particulier</h1>
+        <h1 class="col-auto d-inline d-lg-none">Particulier</h1>
     </section>
 
     <nav class="row" id="nav-menu">
@@ -29,12 +29,12 @@
             <button><span class="burger-icon"></span><strong>Menu</strong></button>
         </section>
         <section class="col-12 col-lg-2">
-            <button onclick="window.location='index.html'">Accueil</button>
+            <button onclick="window.location='../index.html'">Accueil</button>
         </section>
         <section class="col-12 col-lg-4">
-            <button>Nous contacter</button>
+            <button onclick="window.location='contact.html'">Nous contacter</button>
             <button onclick="window.location='points_de_vente.html'">Points de vente</button>
-            <button>Nos valeurs</button>
+            <button onclick="window.location='valeurs.html'">Nos valeurs</button>
         </section>
         <section class="col-12 col-lg-4">
             <button class="individual" onclick="window.location='catalogue_particulier.html'">Catalogue particulier</button>
@@ -46,7 +46,7 @@
 <main class="container my-5">
     <section class="card border-dark">
         <div class="img-produit">
-            <img src="images/coupe_individuelle_Fete.jpg" class="card-img-top" alt="Glace enfant" title="Glace enfant"/>
+            <img src="../images/coupe_individuelle_Fete.jpg" class="card-img-top" alt="Glace enfant" title="Glace enfant"/>
         </div>
 
         <!--Details-->
@@ -63,7 +63,7 @@
                     <div class="card mb-3 mx-2" style="max-width:300px;">
                         <div class="row g-0">
                             <div class="col-lg-4 col-12">
-                                <img src="images/etiquettes/drapeau_francais.jpg" class="rounded-start" alt="Drapeau Français" title="Drapeau Français">
+                                <img src="../images/etiquettes/drapeau_francais.jpg" class="rounded-start" alt="Drapeau Français" title="Drapeau Français">
                             </div>
                             <div class="col-lg-8 d-lg-flex d-none">
                                 <div class="card-body">
@@ -76,7 +76,7 @@
                     <div class="card mb-3 mx-2" style="max-width:300px;">
                         <div class="row g-0">
                             <div class="col-lg-4 col-12">
-                                <img src="images/etiquettes/drapeau_bio.jpg" class="rounded-start" alt="Drapeau Bio" title="Drapeau Bio">
+                                <img src="../images/etiquettes/drapeau_bio.jpg" class="rounded-start" alt="Drapeau Bio" title="Drapeau Bio">
                             </div>
                             <div class="col-lg-8 d-lg-flex d-none">
                                 <div class="card-body">
@@ -104,16 +104,16 @@
 
 <footer class="row">
     <div class="col-12 col-lg-auto">
-        <img src="images/logos/logo_negatif.png" alt="Koh Frais" title="Logo Koh Frais">
+        <img src="../images/logos/logo_negatif.png" alt="Koh Frais" title="Logo Koh Frais">
     </div>
     <div class="col-12 col-lg-auto">
         <section>
             <h3>Plan du site</h3>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">Nous contacter</a></li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
                 <li><a href="points_de_vente.html">Points de vente</a></li>
-                <li><a href="#">Nos valeurs</a></li>
+                <li><a href="valeurs.html">Nos valeurs</a></li>
                 <li><a class="individual" href="catalogue_particulier.html">Catalogue particulier</a></li>
                 <li><a class="professional" href="catalogue_professionnel.html">Catalogue professionnel</a></li>
             </ul>
