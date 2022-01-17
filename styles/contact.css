@@ -9,3 +9,19 @@ main img {
 main a {
     background-color: #EEEEEE;
 }
+
+form {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+form > label > input {
+    width: 100%;
+}
+
+form > label > textarea {
+    width: 100%;
+    height: 8em;
+}
